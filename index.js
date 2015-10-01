@@ -34,7 +34,7 @@ function flatten(target, opts) {
         return step(value, newKey)
       }
 
-      output[newKey] = value
+      output[newKey] = value.replace('"', '"""')
     })
   }
 
